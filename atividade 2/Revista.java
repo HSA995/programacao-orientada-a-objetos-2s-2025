@@ -1,4 +1,3 @@
-// Revista.java
 public class Revista extends Material {
 
     private int edicao;
@@ -23,4 +22,3 @@ public class Revista extends Material {
         this.edicao = edicao;
     }
 }
-
