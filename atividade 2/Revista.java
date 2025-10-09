@@ -1,24 +1,22 @@
 public class Revista extends Material {
+    private Integer edicao;
 
-    private int edicao;
-
-    public Revista(String titulo, int anoPublicacao, int edicao) {
+    public Revista(String titulo, Integer anoPublicacao, Integer edicao) {
         super(titulo, anoPublicacao);
         this.edicao = edicao;
     }
 
-    @Override
-    public void descricao() {
-        System.out.println("Título: " + getTitulo());
-        System.out.println("Publicação: " + getAnoPublicacao());
-        System.out.println("Edição: " + edicao);
-    }
-
-    public int getEdicao() {
+    public Integer getEdicao() {
         return edicao;
     }
 
-    public void setEdicao(int edicao) {
+    public void setEdicao(Integer edicao) {
         this.edicao = edicao;
+    }
+
+    public void descricao() {
+        System.out.println("Título: " + getTitulo());
+        System.out.println("Ano de Publicação: " + getAnoPublicacao());
+        System.out.println("Edição: " + edicao);
     }
 }
