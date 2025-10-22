@@ -115,8 +115,8 @@ public class Main {
                     String dataD = sc.nextLine();
 
                     emprestimos.add(new Emprestimo(pessoas.get(idxUsuario),
-                                                materiais.get(idxMaterial),
-                                                dataE, dataD));
+                                                   materiais.get(idxMaterial),
+                                                   dataE, dataD));
                     System.out.println("Empréstimo cadastrado!\n");
                     break;
 
